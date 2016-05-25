@@ -1,0 +1,9 @@
+---
+Name: rest_api_browsable
+After:
+  - 'framework/*'
+  - 'cms/*'
+  - 'rest_api/*'
+---
+HtmlSerializer:
+  is_active: false
