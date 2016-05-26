@@ -25,7 +25,7 @@ class BrowsableHtmlSerializer extends ViewableData implements IRestSerializer {
      */
     public function serialize($data) {
         $list = $this->recursive($data, 1);
-        return $this->renderWith(['Result', 'Controller'], ['Data' => ArrayList::create($list)]);
+        return $this->renderWith(['BrowsableResult', 'Controller'], ['Data' => ArrayList::create($list)]);
     }
 
     public function contentType() {
